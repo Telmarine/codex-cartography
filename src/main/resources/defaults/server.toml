@@ -1,0 +1,50 @@
+# Codex: Cartography - server rules.
+# Sent to every player with the map when they join and when you run /cartography reload.
+# A player's own settings can only turn things off, never back on.
+
+[sweep]
+# What the Sweep (radar) may show on players' maps.
+players = true
+mobs = true
+pets = true
+vehicles = true
+items = true
+
+[map]
+# Depth View: the layer around the player when underground.
+depth_view = true
+# Slime chunks layer (players can't work these out without the seed).
+slime_chunks = false
+# The map's "travel here" action. Players also need the cartography.travel permission.
+travel = false
+# A Death point where a player died.
+death_points = true
+# A mark for a structure (village, ruined portal, temple, modded ones...) once a player's crosshair hits one of its blocks.
+discovered_structures = true
+# Sharing marks in chat.
+mark_sharing = true
+# World borders drawn on the map.
+world_border = true
+
+[discovered]
+# Structures that never get a discovered mark (structure ids). Mineshafts are everywhere underground.
+skip = ["minecraft:mineshaft", "minecraft:mineshaft_mesa"]
+
+[claims]
+# Claims from Elements: Claims on the map (when that mod is installed).
+claims = true
+claim_marks = true
+
+[markers]
+# Waystones the player has activated, as map markers (when Waystones is installed).
+waystones = true
+# Elements: Nexus homes and warps, as map markers (when Elements: Nexus is installed).
+nexus_markers = true
+
+[dimensions]
+# Readable names for dimensions on the map: "namespace:path=Name".
+names = []
+# Dimensions where the Sweep is off.
+no_sweep = []
+# Dimensions where Depth View is off.
+no_depth_view = []

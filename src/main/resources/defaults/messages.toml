@@ -1,0 +1,9 @@
+# Codex: Cartography - server messages. & color codes work. Reload with /cartography reload.
+
+reloaded = "&aCodex: Cartography reloaded."
+reload_failed = "&cCouldn't read {file}: {error}"
+travel_off = "&cTravel from the map is off on this server."
+travel_no_permission = "&cYou can't travel from the map."
+travel_done = "&7Travelled to &f{x}, {z}&7."
+travel_unsafe = "&cThere's no safe spot to land there."
+travel_players_only = "&cOnly players can travel."
